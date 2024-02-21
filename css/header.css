@@ -1,0 +1,166 @@
+header {
+  width: 100%;
+  line-height: 120px;
+  margin: 0 auto;
+  background-color: transparent;
+  position: fixed;
+  z-index: 998;
+  transition: .3s;
+}
+
+header .header_i {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .3s;
+
+}
+
+header .header_i h1 {
+  width: 200px;
+}
+
+
+header .mo_icon{
+  display: none;
+}
+header .mo_icon img{
+  width: 28px;
+  height: 27px;
+  
+}
+
+
+
+
+header .header_i ul {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-family: "title";
+}
+
+
+header ul li:not(:first-child) {
+  margin-left: 8.5vw;
+}
+
+header .header_i ul li a {
+  display: block;
+}
+
+header ul li:hover {
+  color: #b28b40;
+}
+nav {
+  width: 60%;
+  height: 100%;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  right: -60%;
+  z-index: 999;
+}
+nav .inner figure{
+margin: 16px;
+float: right;
+}
+
+nav .inner ul {
+  clear: both;
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  transform: translate(-40%,-50%);
+      padding-left: 40px;
+}
+nav .inner ul li{
+  font-size: 2.3rem;
+  font-family: 'title';
+}
+nav .inner ul li:hover {
+  color: #b28b40;
+}
+nav .inner ul li:not(:last-child) {
+  margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+/*PC */
+@media screen and (max-width:1200px) {
+
+  header .header_i ul li a {
+    font-size: 1.2rem;
+  }
+  
+  .header_i ul li:not(:first-child) {
+    margin-left: 4.8vw;
+  }
+}
+
+/* 테블릿*/
+@media screen and (max-width:1024px) {
+
+  header {
+    line-height: 80px;
+  }
+
+  header .header_i {
+    padding: 0 40px;
+
+  }
+
+  header .header_i h1 {
+    width: 110px;
+  }
+ 
+    
+ 
+
+  header ul li:not(:first-child) {
+    margin-left: 6vw;
+  }
+}
+
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+
+header{
+  background-color: transparent;
+}
+  header .header_i {
+    height: 70px;
+    padding: 0 16px;
+  }
+    header .header_i h1 {
+      width: 100px;
+    }
+  header .header_i ul {
+    display: none;
+  }
+  header .mo_icon {
+    display: block;
+  }
+  
+}
+
+/* 모바일*/
+@media screen and (max-width:400px) {
+
+nav .inner ul {
+  margin-left: 24px;
+  left: 0;
+  transform: translate(0,-50%);
+}
+
+}
