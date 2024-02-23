@@ -1,0 +1,1419 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+
+@font-face {
+    font-family: "title";
+    src: url(../font/ChosunCentennial_ttf.ttf);
+}
+
+@font-face {
+    font-family: "text";
+    src: url(../font/NanumSquareNeoOTF-Rg.otf);
+}
+
+html,
+body {
+    font-size: 20px;
+    width: 100%;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* 스크롤바 */
+::-webkit-scrollbar {
+    width: 16px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* outline: none; */
+    border-radius: 10px;
+    border: 5px solid #000;
+
+    box-shadow: inset 8px 8px 0 rgba(255,255,255,.7);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border: 4px solid transparent;
+    box-shadow: inset 10px 10px 0 #b28b40;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: none;
+    background-color: transparent;
+}
+/* 스크롤바// */
+
+/* 글 숨기기 */
+.t_hidden {
+    width: 1px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0;
+}
+/* 글 숨기기//*/
+
+/* section1 */
+#section1 {
+    max-width: 1920px;
+    height: 56.3vw;
+    overflow: hidden;
+    background-image: url(../img/main_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0 90px;
+    /* 메인 사진 */
+}
+
+#section1 .main_i {
+    max-width: 1600px;
+    padding-top: 11vw;
+    margin: 0 auto;
+    transition: .3s;
+    /* 글전체 감싸기 */
+}
+#section1 .main_i h2 {
+    font-family: "title";
+    font-size: 6.5rem;
+    line-height: 130px;
+    margin-bottom: 27px;
+    /* 글자 */
+}
+
+/* 아이콘 */
+#section1 .main_i .p_form {
+    max-width: 250px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+    /* top */
+    #section1 .main_i .p_form .top{
+        display: flex;
+        margin-bottom: 40px;
+    }
+    #section1 .main_i .p_form .top img{
+        max-width: 36px;
+        margin-right: 17px;
+    }
+    #section1 .main_i .p_form .top img:last-child{
+        margin-right: 0;
+    }
+    /* btn */
+    #section1 .main_i .p_form .btn{
+        display: flex;
+    }
+    #section1 .main_i .p_form .btn img{
+        max-width: 28px;
+        margin-right: 29px;
+    }
+/* 아이콘 //*/
+
+/* buy */
+#section1 .main_i .buy {
+    display: block;
+    width: fit-content;
+    font-family: "title";
+    font-size: 1.5rem;
+    text-align: center;
+    border: 3px solid #fff;
+    border-radius: 70px;
+    transition: 0.3s;
+    padding: 14.5px 80px;
+}
+
+#section1 .main_i .buy:hover {
+    background-color: #b28b40;
+    border-color: #b28b40;
+}
+/* buy */
+
+/* section1// */
+
+
+/* section2 */
+#section2 {
+    max-width: 1600px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 90px;
+    padding-top: 212px;
+    margin-bottom: 371px;
+}
+
+/* contents */
+#section2 #series_ex .con {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 371px;
+}
+
+/* text */
+#section2 .text {
+    width: 48%;
+    overflow: hidden;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-family: "title";
+    text-align: center;
+    line-height: 200%;
+    font-size: 1.5rem;
+    transition: 1s;
+}
+
+/* 섹션1마지막 글 */
+#section2 .last_t {
+    width: 100%;
+    font-family: "title";
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 480px 16px;
+}
+/* text */
+
+/* photo */
+#section2 .left {
+    width: 48%;
+    margin-right: 20px;
+    border: 10px solid #fff;
+}
+#section2 .right {
+    width: 48%;
+    margin-left: 20px;
+    border: 10px solid #fff;
+}
+/* photo */
+
+/* card */
+#series {
+    /* max-width: 1600px; */
+    overflow: hidden;
+    margin: 0 auto;
+}
+#series .title {
+    font-family: "title";
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 75px;
+    /* 함께 탈출 글 */
+}
+
+#card_wrap {
+    width: 100%;
+    overflow: visible;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#series #card_wrap .con {
+    width: 23.8%;
+    height: 36.4vw;
+    perspective: 1000px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+#series #card_wrap .con:last-of-type {
+    margin-right: 0;
+}
+
+#series #card_wrap .con .card{
+    width: 99%;
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    transform-style: preserve-3d;
+    transition: 1s;
+  }
+  
+
+  
+  /* 앞면 */
+  #series #card_wrap .con .card .front{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+}
+#series #card_wrap .con .card .front img{
+    width: 381px;
+    height: 32.6vw;
+    border-radius: 4px;
+    /* 이미지 가로 고정시킬려고 */
+}
+
+
+/* 뒷면 */
+
+
+
+#series #card_wrap .con .card .back {
+    height: 32.6vw;
+    background-image: url(../img/series_hide.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 4px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+
+/* 카드 안 글자 */
+#series #card_wrap .con .card .back p {
+    font-family: 'title';
+    line-height: 150%;
+    font-size: 1.25rem;
+    margin-bottom: 50px;
+    padding-top: 150px;
+}
+#series #card_wrap .con .card .back a {
+    display: block;
+    width: 11vw;
+    line-height: 56px;
+    font-family: "text";
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    transition: 0.3s;
+    padding: 0 5px;
+}
+#series #card_wrap .con .card .back a:first-of-type {
+    margin-bottom: 20px;
+}
+#series #card_wrap .con .card .back a:hover {
+    background-color: #b28b40;
+    border-color: #b28b40;
+}
+
+/* card// */
+/* 카드 밑 text */
+#section2 .mo_text {
+    line-height: 200%;
+    text-align: center;
+    font-family: "title";
+    margin-top: 16px;
+    margin-bottom: 92px;
+    display: none;
+}
+/* section2// */
+
+/* main */
+main {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 90px;
+}
+
+/* section3 */
+#section3 {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 300px;
+
+}
+
+#section3 .con {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 제목 */
+#section3 .con .title figure img {
+    width: 100%;
+    height: 100%;
+}
+#section3 .con .title a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 92px;
+}
+
+#section3 .con .title a h2 {
+    font-family: "title";
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+/* 상단 */
+#section3 .con .top_con {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+/* img */
+
+#section3 .con .top_con .left {
+    max-width: 675px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#section3 .con .top_con .left img {
+    border-radius: 6px;
+}
+/* 글 */
+
+
+#section3 .con .top_con .title {
+    position: absolute;
+    top: 4%;
+    left: 35%;
+    background-color: #b28b40;
+}
+#section3 .con .top_con .title p{
+    font-family: 'title';
+    font-size: 1.25rem;
+    padding: 9px 33px;
+}
+
+
+#section3 .con .top_con .text {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    top: 4.5vw;
+    margin-left: 50px;
+}
+
+/* scroll */
+
+
+#section3 #news {
+    margin-bottom: 250px;
+
+}
+#section3 #news .top_con .text ul {
+    width: 100%;
+    line-height: 180%;
+    font-family: "text";
+    /* news */
+}
+#section3 #news .top_con .text ul .big {
+    font-size: 1rem;
+    line-height: 180%;
+    /* news */
+}
+#section3 #news .top_con .text ul li:not(.big) {
+    font-size: .8rem;
+    line-height: 180%;
+    list-style: disc;
+    margin-left: 28px;
+    /* news */
+}
+#section3 .con .top_con .text ul .t {
+    margin-bottom: 31px;
+    /* 한문단내리기 */
+}
+
+#section3 #event .top_con .text p {
+    font-size: 1rem;
+    font-family: "text";
+    line-height: 180%;
+    /* event */
+}
+
+/* 하단 */
+#section3 .con .btn_con ul {
+    height: 132px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+#section3 .con .btn_con ul li {
+    width: 45%;
+    line-height: 60px;
+    font-family: "title";
+    font-size: 1.25rem;
+    color: #fff;
+    border-left: 6px solid #b28b40;
+    padding-left: 16px;
+}
+#section3 .con .btn_con ul li a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+/* ...생기게 하기 */
+}
+#section3 .con .btn_con ul li:hover {
+    color: #b28b40;
+    /* news */
+}
+
+#section3 #event .top_con .title {
+    background-color: #729964;
+    /* event */
+}
+#section3 #event .btn_con ul li {
+    border-left-color: #729964;
+    /* event */
+}
+#section3 #event .btn_con ul li:hover {
+    color: #729964;
+    /* event */
+}
+
+
+
+/* section3// */
+
+/* section4 */
+#section4 {
+    width: 100%;
+    height: 742px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 218px;
+}
+#section4 h2 {
+    font-family: "title";
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 80px;
+    /* 제목 */
+}
+
+
+#section4 .autoplay .slide {
+    width: 100%;
+    height: 742px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    /* 틀 */
+}
+
+#section4 .autoplay .slide .img_warp {
+    max-width: 926px;
+    position: relative;
+}
+#section4 .autoplay .slide .img_warp .img {
+    position: relative;
+    top: 0;
+    left: 0;
+    /* 이미지 */
+}
+#section4 .autoplay .slide .img_warp .png {
+    position: absolute;
+    top: 24.5%;
+    right: 0;
+    /* png */
+}
+
+#section4 .autoplay .slide .title p {
+    line-height: 62px;
+    font-family: 'title';
+    font-size: 1.5rem;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 174px;
+    background-color: #4B431C;
+
+    /* title */
+}
+#section4 .autoplay .slide .title {
+    position: absolute;
+    top: 4%;
+    right: -187px;
+    /* title box*/
+}
+
+#section4 .autoplay .slide .text {
+    min-width: 520px;
+    height: 400px;
+    margin-left: 50px;
+    position: relative;
+    top: 18.8%;
+    /* text */
+}
+#section4 .autoplay .slide .text>p {
+    font-family: 'text';
+    font-size: 1rem;
+    line-height: 180%;
+    margin-bottom: 54px;
+    /* text */
+}
+/* 스테이더스 */
+#section4 .autoplay .slide .text .status_i {
+    width: 520px;
+    position: relative;
+}
+#section4 .autoplay .slide .text .status_i .status {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 49px;
+}
+#section4 .autoplay .slide .text .status_i .status p{
+    width: 76px;
+    font-family: 'text';
+    font-size: 1rem;
+
+}
+
+/* 도형 */
+#section4 .autoplay .slide .text .status_i .status .wrap {
+    max-width: 312px;
+    display: flex;
+}
+
+#section4 .autoplay .slide .text .status_i .status .wrap .front {
+    width: 71px;
+    border: 2px solid #fff;
+    border-radius: 20px 0 0 20px;
+    margin-right: 4px;
+    /* 첫번째 */
+}
+#section4 .autoplay .slide .text .status_i .status .wrap .mid {
+    width: 71px;
+    border: 2px solid #fff;
+    margin-right: 4px;
+    /* 미드 */
+}
+
+#section4 .autoplay .slide .text .status_i .status .wrap .last {
+    width: 71px;
+    border: 2px solid #fff;
+    border-radius: 0 20px 20px 0;
+    /* 라스트 */
+}
+#section4 .autoplay .slide .text .status_i .status .wrap .full {
+    background-color: #fff;
+    /* 색칠 */
+}
+/* section4// */
+/* main// */
+
+/* banner */
+#banner {
+    width: 100%;
+    margin-bottom: 350px;
+}
+#banner a {
+    display: block;
+}
+
+#banner a .wrap {
+    width: 100%;
+    height: 86px;
+    background-color: #729964;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* 띠 */
+}
+
+#banner a .wrap figure {
+    margin-right: 30px;
+}
+
+#banner a .wrap p {
+    font-family: 'title';
+    font-size: 1.25rem;
+    line-height: 180%;
+    color: #333;
+    margin-bottom: 10px;
+}
+#banner a .wrap p span {
+    display: block;
+    font-size: .8rem;
+    line-height: 180%;
+}
+/* banner// */
+
+
+/* section5 */
+#section5 {
+    max-width: 1600px;
+    
+    margin: 0 auto;
+    padding: 0 90px;
+    margin-bottom: 206px;
+}
+
+#section5 h2 {
+    font-family: 'title';
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#section5 .con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#section5 .con .link{
+    width: 24.5%;
+    margin-right: .5%;
+}
+
+#section5 .con a{
+    display: block;
+}
+
+#section5 .con a p {
+    font-family: 'text';
+    font-size: .8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#section5 .con .top {
+    margin-bottom: 128px;
+}
+
+#section5 .con img {
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+/* section5// */
+
+@media screen and (max-width:1400px) {
+    /* 중간 분기 */
+    html{
+        font-size: 18px;
+    }
+    #section1 .main_i h2 {
+        line-height: 117px;
+       
+    }
+
+    /* cardback */
+    #card_wrap {
+        width: 99%;
+    }
+    #series #card_wrap .con .card .back p {
+        font-size: 1.18rem;
+        margin-bottom: 10px;
+    }
+    #series #card_wrap .con .card .back a {
+        line-height: 40px;
+    }
+
+    /* news,event */
+    #section3 .con {
+        width: 99%;
+    }
+    #section3 .con .top_con .text {
+        top: 5.5vw;
+    }
+
+    #banner {
+        margin-bottom: 250px;
+    }
+    
+}
+
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 16px;
+    }
+    /* section1 */
+    #section1 .main_i h2 {
+        line-height: 104px;
+        margin-bottom: 7px;
+    }
+
+    #section1 .main_i .p_form {
+        margin-bottom: 20px;
+    }
+    #section1 .main_i .p_form .top {
+        margin-bottom: 20px;
+    }
+
+    /* section2 */
+    #section2 {
+        margin-bottom: 200px;
+    }
+    #section2 .right {
+        border: 8px solid #fff;
+    }
+    #section2 .left {
+        border: 8px solid #fff;
+    }
+
+    #section2 .last_t {
+        margin: 400px 16px;
+    }
+    
+    
+    #card_wrap {
+        justify-content: space-evenly;
+    }
+    #series #card_wrap .con .card .back p {
+        padding: 0 5px;
+        padding-top: 108px;
+    }
+
+    
+    #series #card_wrap {
+        flex-wrap: wrap;
+
+        height: 114vw;
+    }
+    #series #card_wrap .con {
+        width: 40%;
+        height: 52vw;
+        margin-right: 0;
+
+    }
+    #series #card_wrap .con .card .front img {
+        width: 489px;
+        height: 52vw;
+    }
+    #series #card_wrap .con .card .back {
+       height: 52vw;
+
+    }
+
+    #series #card_wrap .con .card .back p {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+
+    #series #card_wrap .con .card .back a {
+        width: 18vw;
+        line-height: 60px;
+        font-size: 1.3rem;
+    }
+    #section3 {
+        margin-bottom: 200px;
+    }
+
+    #section3 #news {
+        margin-bottom: 200px;
+    }
+    #section3 .con .top_con .title p {
+        padding: 10px 12px;
+    }
+    #section3 .con .top_con .title {
+        top: 3%;
+    }
+    #section3 .con .top_con .text {
+        margin-left: 30px;
+    }
+
+    
+
+    #section4 .autoplay:nth-child(6) .slide .title p {
+        padding-left: 60px;
+
+    }
+    #section4 .autoplay .slide .title p {
+        padding-left: 140px;
+        line-height: 50px;
+    }
+    #section4 .autoplay .slide .text {
+        top: 14.8%;
+    }
+
+
+    #banner {
+        margin-bottom: 200px;
+    }
+    #banner a .wrap p {
+        margin-bottom: 20px;
+    }
+    
+
+}
+
+@media screen and (max-width:1024px) {
+    html{
+        font-size: 14px
+    }
+    #section1,#section2,main, #section5{
+        padding: 0 40px;
+    }
+
+    /* section1 */
+    #section1 .main_i {
+        padding-top: 13vw;
+    }
+    #section1 .main_i h2 {
+        line-height: 91px;
+    }
+    #section1 .main_i .p_form .top img {
+        max-width: 30px;
+    }
+    #section1 .main_i .p_form .btn img {
+        max-width: 22px;
+    }
+    #section1 .main_i .buy {
+        display: none;
+    }
+    #section2 {
+        padding-top: 212px;
+        margin-bottom: 250px;
+    }
+    #section2 #series_ex .con {
+        margin-bottom: 280px;
+    }
+    #section2 .text {
+        font-size: 1.4rem;
+    }
+    #section2 .last_t {
+        margin: 250px auto;
+        font-size: 1.4rem;
+    }
+   
+    /* 카드 뒷면 */
+    
+
+
+    
+    
+ 
+    /* new */
+    #section3 .con .top_con .title {
+        width: 95%;
+        top: 0;
+        left: 26%;
+        transform: translateX(-25%);
+    }
+    #section3 .con .top_con .title p {
+        font-size: 1.6rem;
+        padding: 0 20px;
+        text-align: center;
+        line-height: 180%;
+    }
+    /* 뉴스내용 */
+    #section3 .con .top_con {
+        flex-direction: column;
+    }
+    #section3 .con .top_con .left {
+        max-width: none;
+        width: 100%;
+        margin-top: 22px;
+    }
+    #section3 .con .top_con .left img {
+        width: 100%;
+    }
+
+    /* 뉴스 텍스트 */
+    #section3 .con .top_con .text {
+        width: 100%;
+        margin: 0;
+    }
+    #section3 .con .btn_con ul{
+        height: 120px;
+    }
+    #section3 .con .btn_con ul li {
+        line-height: 51px;
+    }
+   
+    #section3 #news .top_con .text ul .big {
+        font-size: 1.2rem;
+    }
+    #section3 #news .top_con .text ul li:not(.big) {
+        font-size: 1rem;
+    }
+    #section3 #event .top_con .text p {
+        font-size: 1.2rem;
+    }
+
+    
+    
+    /* 등장인물 이름 */
+    #section4 {
+        margin-bottom: 50px;
+    }
+    
+    #section4 .autoplay .slide .title {
+        top: 3%;
+        right: -128px;
+    }
+    #section4 .autoplay .slide .title p {
+        line-height: 42px;
+        padding: 0 20px;
+    }
+    /* 캐릭터 */
+    #section4 .autoplay .slide .img_warp {
+        width: 290px;
+    }
+    #section4 .autoplay .slide .img_warp .img {
+        opacity: 0;
+    }
+    #section4 .autoplay .slide .img_warp .png {
+        width: 100%;
+        top: 31px;
+        right: 0;
+    }
+
+    
+    /* 등장인물 글 */
+    #section4 .autoplay .slide .text {
+        max-width: 520px;
+        top: 12.8%;
+    }
+    #section4 .autoplay .slide .text>p {
+        font-size: 1.2rem;
+    }
+    #section4 .autoplay .slide .text .status_i .status p {
+        font-size: 1.2rem;
+    }
+    /* 배너 */
+    #banner a .wrap p span {
+        font-size: 1rem;
+    }
+
+    /* section5 */
+    #section5 .con .link:nth-child(4),#section5 .con .link:nth-child(8){
+        display: none;
+    }
+    #section5 .con .top {
+        margin-bottom: 100px;
+    }
+    #section5 .con .link {
+        width: 32%;
+    }
+    #section5 .con a p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+   ::-webkit-scrollbar {
+        display: none;
+        -ms-overflow-style: none; /* 인터넷 익스플로러 */
+        scrollbar-width: none; /* 파이어폭스 */
+    }
+
+    
+    html{
+        font-size: 10px;
+    }
+    #section1, main,#section5 {
+         padding: 0 16px;
+    }
+    /* section1 */
+    #section1 .main_i {
+        padding-top: 19vw;
+    }
+    #section1 .main_i h2 {
+    
+        font-size: 6.8rem;
+        line-height: 68px;
+        margin-bottom: 10px;
+    }
+    /* 플랫폼 */
+    #section1 .main_i .p_form {
+        display: none;
+    }
+
+    
+    #section1 .main_i .buy {
+        display: none;
+    }
+    
+    /* section2 */
+    #section2{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 50px;
+
+    }
+   
+    #section2 #series_ex .con {
+        flex-direction: column;
+        margin:0;
+    }
+    #section2 .right {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+    #section2 .left {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+
+    #section2 .text {
+        width: 100%;
+        font-size: 1.7rem;
+        order: 2;
+        margin: 20px auto;
+    }
+    #section2 .last_t {
+        font-size: 1.7rem;
+        margin: 150px auto;
+    }
+    #section2 .last_t span{
+        display: block;
+        line-height: 200%;
+    }
+
+    #section2 .mo_text {
+        display: block;
+    }
+    /* 카드 */
+
+    #series #card_wrap {
+        height: 71.6vw;
+    }
+    #card_wrap {
+        width: 65%;
+    }
+    #section2 .mo_hidden{
+        display: none;
+    }
+    #series .title {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+     /* 카드 늘리기 */
+     
+    #series #card_wrap .con {
+        width: 100%;
+        height: 72vw;
+    }
+    #series #card_wrap .con .card {
+        width: 70%;
+        margin: 0 auto;
+    }
+    #series #card_wrap .con .card .front {
+        width: 100%;
+    }
+    #series #card_wrap .con .card .front img {
+        width: 100%;
+        height: 72vw;
+    }
+    #series #card_wrap .con .card .back {
+        height: 72vw;
+    }
+    /* 카드 뒷면 */
+    #series #card_wrap .con .card .back a {
+        width: 13vw;
+    }
+    #series #card_wrap .con .card .back a:first-of-type {
+        margin-bottom: 5px;
+    }
+    /* 카드글 */
+    #series #card_wrap .con .card .back p {
+        padding-top: 110px;
+        font-size: 1.6rem;
+    }
+    
+    #series #card_wrap .con .card .back a {
+        width: 140px;
+        line-height: 39px;
+        font-size: 1.4rem;
+    }
+
+    /* section3 */
+    #section3 .con .title a h2 {
+        font-size: 2.5rem;
+    }
+    #section3 .con .title figure img {
+        width: 75%;
+        height: 100%;
+    }
+
+    #section3 .con .title a {
+        margin-bottom: 55px;
+    }
+    /* 뉴스제목 */
+    
+    #section3 .con .top_con .title p {
+        font-size: 2rem;
+        padding: 0 1px;
+    }
+
+    /* 뉴스 텍스트 */
+
+    #section3 #news {
+        margin-bottom: 150px;
+    }
+   
+    #section3 #news .top_con .text ul .big {
+        font-size: 1.6rem;
+    }
+    #section3 #news .top_con .text ul li:not(.big) {
+        font-size: 1.4rem;
+    }
+
+    
+
+    #section3 .con .btn_con ul li {
+        width: 98%;
+        line-height: 35px;
+        border-left: 3px solid #b28b40;
+        font-size: 1.8rem;
+    }
+    #section3 #event .top_con .text p {
+        font-size: 1.6rem;
+    }
+
+
+    /* section4 */
+        #section4 {
+            height: 800px;
+            margin-bottom: 0;
+        }
+    #section4 h2{
+        font-size: 2.5rem;
+        margin-bottom: 37px;
+    }
+
+    
+    #section4 .autoplay .slide {
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 900px;
+    }
+    #section4 .autoplay .slide .img_warp {
+        max-width: none;
+        width: 100%;
+        margin-bottom: 46px;
+    }
+    #section4 .autoplay .slide .img_warp .img {
+        width: 80%;
+        margin-top: 30px;
+        opacity: 1;
+    }
+    #section4 .autoplay .slide .img_warp .png {
+        top: 17px;
+        right: 9%;
+    }
+    #section4 .autoplay .slide .img_warp .png img{
+        margin-left: 61vw;
+        height: 54vw;
+    }
+    #section4 .autoplay .slide .title {
+        width: fit-content;
+        top: 4%;
+        left: 1%;
+        right: 0;
+        transform: rotate(-5deg);
+    }
+    #section4 .autoplay .slide .title p {
+        font-size: 2.5rem;
+        padding: 2px 33px;
+    }
+    #section4 .autoplay .slide .text {
+        max-width: 100%;
+        min-width: auto;
+        width: 100%;
+        margin: 0;
+        top: 0;
+    }
+    #section4 .autoplay .slide .text>p {
+        font-size: 1.6rem;
+        margin-bottom: 33px;
+        /* padding-right:20px; */
+    }
+    #section4 .autoplay .slide .text .status_i {
+        width: 100%;
+    }
+    #section4 .autoplay .slide .text .status_i .status p {
+        width: 60px;
+        font-size: 1.4rem;
+    }
+    #section4 .autoplay .slide .text .status_i .status {
+        margin-bottom: 22px;
+    }
+    #section4 .autoplay .slide .text .status_i .status .wrap .front {
+        width: 40px;
+    }
+    #section4 .autoplay .slide .text .status_i .status .wrap .mid {
+        width: 40px;
+    }
+    #section4 .autoplay .slide .text .status_i .status .wrap .last {
+        width: 40px;
+    }
+
+    /* baaner */
+    #banner a .wrap {
+        height: 54px;
+    }
+    #banner a .wrap figure {
+        max-width: 120px;
+        margin-right: 0;
+    }
+    #banner a .wrap p {
+        font-size: 1.2rem;
+        line-height: 150%;
+        padding: 0 8px;
+        margin-bottom: 10px;
+    }
+    #banner a .wrap p span {
+        font-size: 1.2rem;
+        line-height: 150%;
+    }
+
+    /* section5 */
+    #section5 h2 {
+        font-size: 2.5rem;
+        margin-bottom: 55px;
+    }
+     #section5 .con .link:nth-child(3),#section5 .con .link:nth-child(7){
+        display: none;
+    }
+    #section5 .con .link {
+        width: 48%;
+    }
+    #section5 .con img {
+        margin-bottom: 9px;
+    }
+    #section5 .con a p {
+        font-size: 1.2rem;
+    }
+    #section5 .con .top {
+        margin-bottom: 21px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #section1 .main_i h2 {
+        font-size: 4.8rem;
+        line-height: 48px;
+    }
+
+    #section3 .con .btn_con ul {
+        margin-top: 50px;
+    }
+
+    #section5 {
+        margin-bottom: 150px;
+    }
+    #section4 .autoplay .slide .img_warp .png {
+        right: 17%;
+    }
+
+    
+}
+@media screen and (max-width:400px) {
+
+    #section1 .main_i {
+        padding-top: 22vw;
+    }
+    #section1 .main_i h2 {
+        font-size: 4rem;
+        line-height: 40px;
+    }
+
+    #section1 .main_i .p_form {
+        display: none;
+    }
+
+    #section2 .text {
+        font-size: 1.6rem;
+    }
+    #section2 .last_t {
+        font-size: 1.6rem;
+        margin: 88px auto;
+    }
+
+    #series #card_wrap .con .card .back a {
+        width: 120px;
+        line-height: 29px;
+        font-size: 1.4rem;
+    }
+    #series #card_wrap .con .card .back p {
+        padding-top: 86px;
+        font-size: 1.4rem;
+    }
+
+    #section3 {
+        margin-bottom: 100px;
+    }
+    
+    
+    #section3 .con .top_con .title p {
+        font-size: 1.8rem;
+    }
+    #section3 .con .title a h2 {
+        margin-right: 10px;
+    }
+    
+   
+    #section3 #news .top_con .text ul .big {
+        font-size: 1.4rem;
+    }
+    #section3 #news .top_con .text ul li:not(.big) {
+        font-size: 1.2rem;
+    }
+    #section3 #event .top_con .text p {
+        font-size: 1.4rem;
+    }
+    
+    #section3 .con .btn_con ul {
+        height: 70px;
+    }
+    #section3 .con .btn_con ul li {
+        font-size: 1.4rem;
+        line-height: 30px;
+    }
+    #section3 .con .btn_con ul .btn {
+        display: none;
+    }
+    #section3 #news {
+        margin-bottom: 98px;
+    }
+    
+    
+    
+    
+    #section4 {
+        height: 700px;
+    }
+    #section4 .autoplay .slide .text>p {
+        font-size: 1.4rem;
+    }
+
+    #section4 .autoplay .slide .img_warp .png {
+        right: 17%;
+    }
+
+
+
+    #banner {
+        margin-bottom: 76px;
+    }
+
+    #banner a .wrap figure {
+        max-width: 100px;
+    }
+
+    #section5 {
+        margin-bottom: 116px 
+    }
+
+    #section5 h2 {
+        margin-bottom: 40px;
+    }
+
+    #section5 .con a p {
+        font-size: .9rem;
+    }
+    #section2 .mo_text {
+      font-size: 1.6rem;
+    }
+}
