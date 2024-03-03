@@ -1,0 +1,531 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+
+@font-face {
+    font-family: "title";
+    src: url(../font/ChosunCentennial_ttf.ttf);
+}
+
+@font-face {
+    font-family: "text";
+    src: url(../font/NanumSquareNeoOTF-Rg.otf);
+}
+
+html,
+body {
+    font-size: 20px;
+    width: 100%;
+    transition: all .3s;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* 스크롤바 */
+::-webkit-scrollbar {
+    width: 16px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* outline: none; */
+    border-radius: 10px;
+    border: 5px solid #000;
+
+    box-shadow: inset 8px 8px 0 rgba(255, 255, 255, .7);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border: 4px solid transparent;
+    box-shadow: inset 10px 10px 0 #b28b40;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+/* 스크롤바// */
+
+/* 글 숨기기 */
+.t_hidden {
+    width: 1px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0;
+}
+
+/* 글 숨기기//*/
+
+#news {
+    padding-top: 255px;
+    padding-bottom: 230px;
+}
+
+#event {
+    padding-bottom: 230px;
+}
+
+body>.text {
+    max-width: 1600px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 90px;
+}
+
+body>.text h2 {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'title';
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+body>.text .top {
+    width: 100%;
+    position: relative;
+}
+
+body>.text .top h3 {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'title';
+    font-size: 1.25rem;
+    padding: 11px 30px;
+    position: absolute;
+    top: 4%;
+    left: 38%;
+}
+
+body>#news .top h3 {
+    background-color: #b28b40;
+}
+
+body>#event .top h3 {
+    background-color: #729964;
+}
+
+body>.text .top .con {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+body>.text .top .con .img {
+    width: 675px;
+}
+
+body>.text .top .con .img img {
+    border-radius: 6px;
+}
+
+body>.text .top .con .text {
+    width: 48%;
+    line-height: 180%;
+    font-family: 'text';
+    font-size: 1rem;
+    margin-top: 5.5%;
+    margin-left: 20px;
+}
+
+body>.text .top .con .text .small {
+    margin-left: 25px;
+    list-style: disc;
+    font-size: 0.8rem;
+}
+
+body>.text .top .con .text .t {
+    margin-bottom: 3%;
+}
+
+/* //top */
+
+body>.text .btn {
+    width: 100%;
+    margin-top: 5%;
+}
+
+body>.text .btn .list {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+body>.text .btn .list li {
+    width: 45%;
+    line-height: 60px;
+    font-family: 'title';
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    padding: 0 18px;
+
+}
+
+body>.text .btn .list li:nth-child(2n) {
+    float: left;
+}
+
+body>.text .btn .list li:nth-child(2n + 1) {
+    float: right;
+}
+
+body>.text .btn .list li a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+body>#news .btn .list li {
+    border-left: 6px solid #b28b40;
+}
+
+body>#news .btn .list li:hover {
+    color: #b28b40;
+}
+
+body>#event .btn .list li {
+    border-left: 6px solid #729964;
+}
+
+body>#event .btn .list li:hover {
+    color: #729964;
+}
+
+/* //bottom */
+
+
+/* 버튼 */
+body>.text .btn .load {
+    width: 163px;
+    height: 52px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+body>#news .btn .load {
+    border: 2px solid #b28b40;
+}
+
+body>#event .btn .load {
+    border: 2px solid #729964;
+}
+
+body>.text .btn .load span {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'text';
+    font-size: 20px;
+}
+
+body>#news .btn .load span {
+    color: #b28b40;
+}
+
+body>#event .btn .load span {
+    color: #729964;
+}
+
+body>.text .btn .load img {
+    width: 22px;
+    height: 10px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:1500px) {
+    html {
+        font-size: 18px;
+    }
+
+    body>.text .top .con .img {
+        max-width: 47%;
+    }
+
+    body>.text .top h3 {
+        top: 2%;
+    }
+
+    body>.text .top .con .text {
+        width: 50%;
+        line-height: 160%;
+    }
+
+    body>.text .top .con .text .t {
+        margin-bottom: 1%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    html {
+        font-size: 16px;
+    }
+
+    #news {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    #event {
+        padding-bottom: 200px;
+    }
+
+    body>.text .top .con .img {
+        max-width: none;
+        width: 480px;
+    }
+
+    body>.text .top h3 {
+        top: -5%;
+        left: 36%;
+        padding: 8px 20px;
+    }
+
+    body>.text .top .con .text {
+        margin-top: 3.5%;
+    }
+
+
+    body>.text .btn .list li {
+        line-height: 50px;
+        margin-bottom: 15px;
+        padding: 0 15px;
+    }
+
+    body>#news .btn .list li {
+        border-left: 4px solid #b28b40;
+    }
+
+    body>#event .btn .list li {
+        border-left: 4px solid #729964;
+    }
+
+    body>.text .btn .load {
+        width: 140px;
+        height: 40px;
+        margin-top: 100px;
+    }
+
+    body>.text .btn .load span {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    html {
+        font-size: 18px;
+    }
+
+    body>.text {
+        padding: 0 40px;
+    }
+
+    #news {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    body>.text .top h3 {
+        text-align: center;
+        top: -2.2%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    body>#news .top h3 {
+        min-width: 400px;
+    }
+
+    body>#event .top h3 {
+        min-width: 570px;
+    }
+
+    body>.text .top .con {
+        flex-direction: column;
+    }
+
+    body>.text .top .con .img {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    body>.text .top .con .img img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    body>.text .top .con .text {
+        width: 100%;
+        line-height: 180%;
+        margin: 0 auto;
+        margin-top: 3.5%;
+    }
+
+    body>.text .btn .list li {
+        font-size: 1rem;
+    }
+
+
+
+    body>.text .btn .load {
+        width: 130px;
+        height: 35px;
+    }
+
+    body>.text .btn .load span {
+        font-size: 16px;
+    }
+
+
+}
+
+@media screen and (max-width:767px) {
+    html {
+        font-size: 16px;
+    }
+
+    #event {
+        padding-bottom: 150px;
+    }
+
+    body>.text {
+        padding: 0 16px;
+    }
+
+    body>.text .top h3 {
+        padding: 5px 25px;
+        line-height: 160%;
+        top: -5%;
+    }
+
+    body>.text h3 span {
+        display: block;
+    }
+
+    body>#news .top h3 {
+        min-width: 190px;
+    }
+
+    body>#event .top h3 {
+        min-width: 290px;
+    }
+
+
+
+
+    body>.text .btn .list li {
+        width: 97%;
+        line-height: 40px;
+        font-size: 1.25rem;
+    }
+
+    body>.text .btn .list li:nth-child(2n) {
+        float: none;
+        /* clear: left; */
+    }
+
+    body>.text .btn .list li:nth-child(2n + 1) {
+        float: none;
+        /* clear: right; */
+    }
+
+    body>#news .btn .list li {
+        border-left: 3px solid #b28b40;
+    }
+
+    body>#event .btn .list li {
+        border-left: 3px solid #729964;
+    }
+
+    body>.text .btn .load {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    body>#news .btn .load {
+        border: none;
+    }
+
+    body>#event .btn .load {
+        border: none;
+    }
+
+    body>.text .btn .load span {
+        display: none;
+    }
+
+    body>.text .btn .load img {
+        width: 25px;
+        height: 10px;
+        margin-left: 0;
+    }
+
+}
+
+
+@media screen and (max-width:400px) {
+    html {
+        font-size: 14px;
+    }
+
+    #news {
+        padding-top: 120px;
+        padding-bottom: 100px;
+    }
+
+    #event {
+        padding-bottom: 100px;
+    }
+
+    body>.text h2 {
+        font-size: 1.8rem;
+        margin-bottom: 70px;
+    }
+
+    body>.text .top h3 {
+        padding: 4px 16px;
+        line-height: 150%;
+        font-size: 1.4rem;
+    }
+
+    body>.text .top .con .text .small {
+        margin-left: 16px;
+        font-size: 0.9rem;
+    }
+
+    body>.text .top .con .text .t {
+        margin-bottom: 5%;
+    }
+
+    body>.text .btn {
+        margin-top: 10%;
+    }
+
+
+
+    body>.text .btn .list li {
+        font-size: 1.15rem;
+        line-height: 30px;
+        padding: 0 10px;
+    }
+
+    body>.text .btn .load {
+        margin-top: 40px;
+    }
+
+
+
+}
