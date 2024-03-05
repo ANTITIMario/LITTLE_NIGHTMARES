@@ -219,6 +219,8 @@ body {
 
 .swiper-wrapper #page2 .page_wrap .text{
     grid-row: 5/12;
+    font-size: 1.3rem;
+
 }
 .swiper-wrapper #page2 .page_wrap .text li:nth-child(1) {
     max-width: 600px;
@@ -237,6 +239,8 @@ body {
 
 .swiper-wrapper #page3 .page_wrap .text{
     grid-row: 5/12;
+    font-size: 1.3rem;
+
 }
 .swiper-wrapper #page3 .page_wrap .text li:nth-child(1) {
     max-width: 600px;
